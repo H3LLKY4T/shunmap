@@ -41,15 +41,15 @@ Open your browser and navigate to http://localhost:5000.
 - View the scan results, Nmap syntax, and IP address in the respective boxes.
   
 ### Project Structure
-- app.py: The Flask application file that handles routes and the Nmap scan logic.
-- templates/index.html: The main HTML file for the web interface.
-- static/css/styles.css: The CSS file for styling the web interface.
-- static/js/main.js: The JavaScript file for handling form submission and UI interactions.
+- ```app.py```: The Flask application file that handles routes and the Nmap scan logic.
+- ```templates/index.html```: The main HTML file for the web interface.
+- ```static/css/styles.css```: The CSS file for styling the web interface.
+- ```static/js/main.js```: The JavaScript file for handling form submission and UI interactions.
 
 ### Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
-This project is licensed under the GNU License. See the LICENSE file for details.
+This project is licensed under the GPL License. See the LICENSE file for details.
 
 
