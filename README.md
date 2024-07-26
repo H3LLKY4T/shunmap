@@ -1,6 +1,6 @@
-# Shunmap Web Scanner
+# Shenmap Web Scanner
 
-Shunmap Web Scanner is a web-based tool for performing Nmap scans. It allows users to enter a target URL or IP address, select various scan options, and view the results directly in the browser. The tool is optimized for both desktop and mobile use.
+Shenmap Web Scanner is a web-based tool for performing Nmap scans. It allows users to enter a target URL or IP address, select various scan options, and view the results directly in the browser. The tool is optimized for both desktop and mobile use.
 
 ## Features
 
@@ -20,8 +20,8 @@ Shunmap Web Scanner is a web-based tool for performing Nmap scans. It allows use
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/H3LLKY4T/shunmap.git
-   cd shunmap
+   git clone https://github.com/H3LLKY4T/shenmap.git
+   cd shenmap
 pip install requirements:
 
 ```
