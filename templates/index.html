@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shunmap Web Scanner</title>
+    <title>Shenmap Web Scanner</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+    <nav>
+        <div class="logo-container">
+            <a href="#" class="logo">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Shenmap Logo">
+            </a>
+        </div>
+        <div class="menu-container">
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
@@ -18,11 +24,11 @@
                 <li><a href="#">Open Source</a></li>
                 <li><a href="#" class="signup-button">Signup</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     <main>
         <div class="container">
-            <h1><b>Shunmap Web Scanner</b></h1>
             <h2>Disclaimer</h2>
             <p>Unauthorized scanning and probing of networks can be illegal and unethical. The creators of this tool assume no responsibility for any misuse of the tool or any legal consequences that may arise from its use. Always ensure you have permission before performing any network scans or tests.</p>
             <form id="scan-form">
@@ -31,63 +37,66 @@
                     <label class="switch">Disable Ping
                         <input type="checkbox" id="pn" name="option" value="-Pn">
                         <span class="slider"></span>
-                        
                     </label>
                     <label class="switch">TCP SYN Scan
                         <input type="checkbox" id="sS" name="option" value="-sS">
                         <span class="slider"></span>
-                        
                     </label>
                     <label class="switch">Version Detection
                         <input type="checkbox" id="sV" name="option" value="-sV">
                         <span class="slider"></span>
-                        
                     </label>
                     <label class="switch">OS Detection
                         <input type="checkbox" id="O" name="option" value="-O">
                         <span class="slider"></span>
-                        
                     </label>
                     <label class="switch">All Port Scan
                         <input type="checkbox" id="p" name="option" value="-p-">
                         <span class="slider"></span>
-                        
                     </label>
-                    <label class="switch"> Aggressive Scan
+                    <label class="switch">Aggressive Scan
                         <input type="checkbox" id="A" name="option" value="-A">
                         <span class="slider"></span>
-                       
                     </label>
                     <label class="switch">Threads to 4
                         <input type="checkbox" id="T4" name="option" value="-T4">
                         <span class="slider"></span>
-                        
                     </label>
                 </div>
-             <button type="submit">Scan</button> 
-              
+                <button type="submit">Scan</button>
             </form>
             <div id="loading" class="loading">
-            <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
-	<circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
-	<circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
-	<circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
-	<circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
-</svg>
+                <div class="loader3">
+                    <div class="bars bar1"></div>
+                    <div class="bars bar2"></div>
+                    <div class="bars bar3"></div>
+                    <div class="bars bar4"></div>
+                    <div class="bars bar5"></div>
+                    <div class="bars bar6"></div>
+                    <div class="bars bar7"></div>
+                    <div class="bars bar8"></div>
+                    <div class="bars bar9"></div>
+                    <div class="bars bar10"></div>
+                </div>
             </div>
-            <div id="nmap-syntax"></div> 
+            <div id="nmap-syntax"></div>
             <div id="result">
                 <h2>Scan Results:</h2>
-                <div id="ip-address"></div> 
+                <div id="ip-address"></div>
                 <div id="ports"></div>
                 <div id="details"></div>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 <b>Shunmap Web Scanner</b>. All rights reserved. Made by <b>Amal T Shuja</b> with love 🏳️‍🌈</p>
+        <p>&copy; 2024 <b>Shenmap Web Scanner</b>. All rights reserved.</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            var menuContainer = document.querySelector('.menu-container');
+            menuContainer.classList.toggle('open');
+        }
+    </script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
-
